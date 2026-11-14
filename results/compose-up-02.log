@@ -1,0 +1,128 @@
+ Image task-soup-worker Building 
+ Image task-soup-migrate Building 
+ Image task-soup-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.37kB done
+#1 DONE 0.0s
+
+#2 [migrate internal] load build definition from Dockerfile
+#2 transferring dockerfile: 300B done
+#2 DONE 0.0s
+
+#3 [api internal] load metadata for docker.io/library/golang:1.24-alpine
+#3 DONE 0.9s
+
+#4 [migrate internal] load metadata for docker.io/library/alpine:3.21
+#4 DONE 0.9s
+
+#5 [api internal] load .dockerignore
+#5 transferring context: 63B done
+#5 DONE 0.0s
+
+#6 [worker stage-1 1/3] FROM docker.io/library/alpine:3.21@sha256:bc21487101ae47172509130ee1092cc273a831968d64b617776d1f69c81e42ab
+#6 resolve docker.io/library/alpine:3.21@sha256:bc21487101ae47172509130ee1092cc273a831968d64b617776d1f69c81e42ab 0.0s done
+#6 DONE 0.0s
+
+#7 [api build 1/6] FROM docker.io/library/golang:1.24-alpine@sha256:8bee1901f1e530bfb4a7850aa7a479d17ae3a18beb6e09064ed54cfd245b7191
+#7 resolve docker.io/library/golang:1.24-alpine@sha256:8bee1901f1e530bfb4a7850aa7a479d17ae3a18beb6e09064ed54cfd245b7191 0.0s done
+#7 DONE 0.0s
+
+#8 [worker internal] load build context
+#8 transferring context: 33.59kB done
+#8 DONE 0.0s
+
+#9 [worker build 3/6] COPY go.mod go.sum ./
+#9 CACHED
+
+#10 [worker build 2/6] WORKDIR /src
+#10 CACHED
+
+#11 [worker build 4/6] RUN go mod download
+#11 CACHED
+
+#12 [api build 5/6] COPY . .
+#12 DONE 0.0s
+
+#13 [worker build 6/6] RUN CGO_ENABLED=0 go build -trimpath -o /soup ./cmd/soup
+#13 DONE 3.8s
+
+#14 [worker stage-1 2/3] RUN adduser -D -u 10001 soup
+#14 CACHED
+
+#15 [worker stage-1 3/3] COPY --from=build /soup /soup
+#15 DONE 0.0s
+
+#16 [worker] exporting to image
+#16 exporting layers
+#16 exporting layers 0.2s done
+#16 exporting manifest sha256:5bd99b784531a01882054f4f3b9ea593ba5986542e52b0047a08dffef32484bc done
+#16 exporting config sha256:cef2db4ab29b093fb415b66737cf8e75d1cd7f993d6e58c554bece0f5d6d461f 0.0s done
+#16 exporting attestation manifest sha256:5c40b55ff101b56bcfbeccd9716cb45ee098d357a1bc9671091afc1b9895ee00 0.0s done
+#16 exporting manifest list sha256:73b11dda8366be44652adb862d676999cfa86f7ac06460082876d8ebb4ab889e done
+#16 naming to docker.io/library/task-soup-worker:latest done
+#16 unpacking to docker.io/library/task-soup-worker:latest
+#16 unpacking to docker.io/library/task-soup-worker:latest 0.1s done
+#16 DONE 0.4s
+
+#17 [api] exporting to image
+#17 exporting layers 0.2s done
+#17 exporting manifest sha256:c7d08c001e41a8285f16bf7cb279deba78cdb367230ca3a7bfdfdb12331e2ab8 done
+#17 exporting config sha256:e7f3fc172986630d94527a5300a66ba526de91607245108e669cc62129f1159f 0.0s done
+#17 exporting attestation manifest sha256:e7f368a9ddddf17f8faeaa8231559c5ab6944e0cd24387cc9e508574cc88f568 0.0s done
+#17 exporting manifest list sha256:7a426d48ac461e631c425ce4828d9af4e0b66661028819c07cb298d2ed77b28d done
+#17 naming to docker.io/library/task-soup-api:latest done
+#17 unpacking to docker.io/library/task-soup-api:latest 0.1s done
+#17 DONE 0.4s
+
+#18 [migrate] exporting to image
+#18 exporting layers 0.2s done
+#18 exporting manifest sha256:ef7b6014d4b5e8c3749bee996193833e9a808f48f85cdc7995667043b3f1275c done
+#18 exporting config sha256:a2e2168ef3731552fae128f70919925e7017d82ff5e98836725c043f0e3b826c 0.0s done
+#18 exporting attestation manifest sha256:78d4710a892f1405ed4f78029a5e35343a535b38f1c99a0d814226fb9b577da4 0.0s done
+#18 exporting manifest list sha256:b0d27a1886c183b2a7b4c590a2f8eb9318a1a81b86880254368124a7954c103d done
+#18 naming to docker.io/library/task-soup-migrate:latest done
+#18 unpacking to docker.io/library/task-soup-migrate:latest 0.1s done
+#18 DONE 0.4s
+
+#19 [worker] resolving provenance for metadata file
+#19 DONE 0.0s
+
+#20 [api] resolving provenance for metadata file
+#20 DONE 0.0s
+
+#21 [migrate] resolving provenance for metadata file
+#21 DONE 0.0s
+ Image task-soup-migrate Built 
+ Image task-soup-api Built 
+ Image task-soup-worker Built 
+ Container task-soup-db-1 Running 
+ Container task-soup-migrate-1 Creating 
+ Container task-soup-migrate-1 Created 
+ Container task-soup-worker-4 Creating 
+ Container task-soup-worker-2 Creating 
+ Container task-soup-api-1 Creating 
+ Container task-soup-worker-3 Creating 
+ Container task-soup-worker-1 Creating 
+ Container task-soup-worker-3 Created 
+ Container task-soup-api-1 Created 
+ Container task-soup-worker-4 Created 
+ Container task-soup-worker-2 Created 
+ Container task-soup-worker-1 Created 
+ Container task-soup-db-1 Waiting 
+ Container task-soup-db-1 Healthy 
+ Container task-soup-migrate-1 Starting 
+ Container task-soup-migrate-1 Started 
+ Container task-soup-migrate-1 Waiting 
+ Container task-soup-migrate-1 Waiting 
+ Container task-soup-migrate-1 Exited 
+ Container task-soup-worker-1 Starting 
+ Container task-soup-migrate-1 Exited 
+ Container task-soup-api-1 Starting 
+ Container task-soup-worker-1 Started 
+ Container task-soup-worker-3 Starting 
+ Container task-soup-api-1 Started 
+ Container task-soup-worker-3 Started 
+ Container task-soup-worker-4 Starting 
+ Container task-soup-worker-4 Started 
+ Container task-soup-worker-2 Starting 
+ Container task-soup-worker-2 Started 

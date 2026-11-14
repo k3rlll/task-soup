@@ -1,0 +1,32 @@
+2026/11/13 12:43:27 INFO api listening addr=127.0.0.1:18080
+2026/11/13 12:43:27 INFO worker started pid=88189
+2026/11/13 12:43:27 INFO worker started pid=88190
+2026/11/13 12:43:27 INFO worker started pid=88187
+2026/11/13 12:43:27 INFO worker started pid=88188
+2026/11/13 12:43:27 INFO worker started pid=88192
+2026/11/13 12:43:27 INFO worker started pid=88193
+2026/11/13 12:43:27 INFO worker started pid=88191
+2026/11/13 12:43:27 INFO worker started pid=88194
+2026/11/13 12:43:27 INFO completion fenced job=1 token=1
+2026/11/13 12:43:27 INFO completion fenced job=6 token=1
+2026/11/13 12:43:29 INFO worker started pid=88199
+2026/11/13 12:43:31 INFO worker started pid=88200
+2026/11/13 12:43:33 INFO worker started pid=88203
+2026/11/13 12:43:35 INFO worker started pid=88209
+2026/11/13 12:43:37 INFO worker started pid=89046
+2026/11/13 12:43:39 INFO worker started pid=89049
+2026/11/13 12:43:41 INFO worker started pid=89050
+2026/11/13 12:43:43 INFO worker started pid=89053
+2026/11/13 12:43:45 INFO worker started pid=89054
+2026/11/13 12:43:47 INFO worker started pid=89055
+2026/11/13 12:43:49 INFO worker started pid=89061
+2026/11/13 12:43:51 INFO worker started pid=89062
+2026/11/13 12:43:53 INFO worker started pid=89067
+2026/11/13 12:43:55 INFO worker started pid=89068
+2026/11/13 12:43:57 INFO worker started pid=89069
+2026/11/13 12:43:59 INFO worker started pid=89072
+2026/11/13 12:44:01 INFO worker started pid=89073
+2026/11/13 12:44:03 INFO worker started pid=89076
+2026/11/13 12:44:05 INFO worker started pid=89081
+2026/11/13 12:44:07 INFO worker started pid=89082
+2026/11/13 12:44:09 INFO worker started pid=89083

@@ -1,0 +1,24 @@
+?   	github.com/task-soup/queue/cmd/harness	[no test files]
+?   	github.com/task-soup/queue/cmd/soup	[no test files]
+=== RUN   TestConcurrentIdempotency
+--- PASS: TestConcurrentIdempotency (0.07s)
+=== RUN   TestConcurrentClaim
+--- PASS: TestConcurrentClaim (0.14s)
+=== RUN   TestZombieAndExpiredLease
+--- PASS: TestZombieAndExpiredLease (0.02s)
+=== RUN   TestCancelCompleteOrdersAndRace
+--- PASS: TestCancelCompleteOrdersAndRace (0.26s)
+=== RUN   TestAttemptExhaustionAndFailure
+--- PASS: TestAttemptExhaustionAndFailure (0.02s)
+=== RUN   TestAtomicRollback
+--- PASS: TestAtomicRollback (0.02s)
+=== RUN   TestDatabaseTimeAndIsolation
+--- PASS: TestDatabaseTimeAndIsolation (0.02s)
+=== RUN   TestHTTPContract
+--- PASS: TestHTTPContract (0.02s)
+=== RUN   TestLeaseExpiresWhileWaitingForLock
+--- PASS: TestLeaseExpiresWhileWaitingForLock (0.03s)
+=== RUN   TestLeaseRenewal
+--- PASS: TestLeaseRenewal (0.02s)
+PASS
+ok  	github.com/task-soup/queue/internal/queue	2.217s

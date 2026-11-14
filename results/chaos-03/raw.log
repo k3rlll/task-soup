@@ -1,0 +1,57 @@
+started=2026-11-13T07:47:30Z seed=777 jobs=10000 workers=8 kill_interval=2s load=false
+kill elapsed=2.079s slot=2 pid=92467
+kill elapsed=4.079s slot=5 pid=92470
+kill elapsed=6.079s slot=3 pid=92468
+drain elapsed=6.302s pending=7161
+drain elapsed=7.303s pending=6920
+kill elapsed=8.08s slot=1 pid=92466
+drain elapsed=8.305s pending=6683
+drain elapsed=9.307s pending=6445
+kill elapsed=10.081s slot=4 pid=92469
+drain elapsed=10.309s pending=6208
+drain elapsed=11.31s pending=5968
+kill elapsed=12.081s slot=2 pid=92877
+drain elapsed=12.312s pending=5733
+drain elapsed=13.313s pending=5493
+kill elapsed=14.081s slot=3 pid=92889
+drain elapsed=14.316s pending=5257
+drain elapsed=15.317s pending=5019
+kill elapsed=16.081s slot=6 pid=92471
+drain elapsed=16.32s pending=4782
+drain elapsed=17.321s pending=4544
+kill elapsed=18.081s slot=0 pid=92465
+drain elapsed=18.323s pending=4308
+drain elapsed=19.325s pending=4071
+kill elapsed=20.082s slot=3 pid=93305
+drain elapsed=20.327s pending=3837
+drain elapsed=21.329s pending=3600
+kill elapsed=22.081s slot=4 pid=93301
+drain elapsed=22.331s pending=3367
+drain elapsed=23.332s pending=3131
+kill elapsed=24.08s slot=0 pid=93307
+drain elapsed=24.334s pending=2898
+drain elapsed=25.336s pending=2662
+kill elapsed=26.08s slot=4 pid=93315
+drain elapsed=26.338s pending=2430
+drain elapsed=27.34s pending=2196
+kill elapsed=28.081s slot=6 pid=93306
+drain elapsed=28.341s pending=1962
+drain elapsed=29.343s pending=1728
+kill elapsed=30.08s slot=0 pid=93318
+drain elapsed=30.345s pending=1494
+drain elapsed=31.347s pending=1260
+kill elapsed=32.082s slot=6 pid=93321
+drain elapsed=32.349s pending=1030
+drain elapsed=33.351s pending=795
+kill elapsed=34.081s slot=1 pid=92890
+drain elapsed=34.354s pending=562
+drain elapsed=35.356s pending=330
+kill elapsed=36.082s slot=7 pid=92472
+drain elapsed=36.358s pending=99
+drain elapsed=37.36s pending=1
+kill elapsed=38.08s slot=7 pid=93328
+drain elapsed=38.362s pending=0
+kill elapsed=40.079s slot=7 pid=93329
+SUMMARY total=10000 expected=10000 states=map[cancelled:1429 failed:89 succeeded:8482] effects=8482 attempts=8588 retried=16 kills=20 duplicates=10000 cancellations=1429 violations=0 key_mismatches=0 request_errors=0 latency_p95_ms=3.481 latency_p99_ms=4.748
+PASS
+finished=2026-11-13T07:48:11Z elapsed=40.471922459s error=<nil>

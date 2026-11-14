@@ -1,0 +1,7 @@
+started=2026-11-13T07:48:11Z seed=42 jobs=10000 workers=8 kill_interval=2s load=true
+load requests=3000 target_rps=100 elapsed=30.001713833s achieved_rps=99.99
+drain elapsed=30.075s pending=1
+drain elapsed=31.077s pending=0
+SUMMARY total=1500 expected=1500 states=map[succeeded:1500] effects=1500 attempts=1500 retried=0 kills=0 duplicates=0 cancellations=0 violations=0 key_mismatches=0 request_errors=0 latency_p95_ms=1.109 latency_p99_ms=1.363
+PASS
+finished=2026-11-13T07:48:42Z elapsed=31.093342583s error=<nil>

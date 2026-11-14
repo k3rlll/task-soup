@@ -1,0 +1,61 @@
+2026/11/13 12:48:19 INFO api listening addr=127.0.0.1:18081
+GET /healthz {'status': 'ok'}
+POST /jobs {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'queued', 'token': 0, 'attempts': 0}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'queued', 'token': 0, 'attempts': 0}
+2026/11/13 12:48:19 INFO worker started pid=93756
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 1, 'attempts': 1, 'lease_until': '2026-11-13T12:48:21.674903+05:00'}
+SIGSTOP 93756
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 1, 'attempts': 1, 'lease_until': '2026-11-13T12:48:21.674903+05:00'}
+2026/11/13 12:48:22 INFO worker started pid=93761
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+SIGCONT 93756
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.0899+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:24.759066+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:25.425057+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.093159+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:26.758818+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:27.42582+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.091792+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.759133+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.759133+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.759133+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'running', 'token': 2, 'attempts': 2, 'lease_until': '2026-11-13T12:48:28.759133+05:00'}
+GET /jobs/1 {'id': 1, 'idempotency_key': 'real-zombie', 'duration_ms': 5000, 'simulate_failure': False, 'state': 'succeeded', 'token': 2, 'attempts': 2}
+PASS: real zombie fenced, replacement succeeded with heartbeat, exactly one effect

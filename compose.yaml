@@ -1,0 +1,45 @@
+x-app: &app
+  build: .
+  environment: &env
+    DATABASE_URL: postgres://soup:soup@db:5432/soup?sslmode=disable
+    LEASE_DURATION: 2s
+    MAX_ATTEMPTS: 10
+  depends_on:
+    migrate:
+      condition: service_completed_successfully
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: soup
+      POSTGRES_PASSWORD: soup
+      POSTGRES_DB: soup
+    ports:
+      - "127.0.0.1:54329:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U soup -d soup"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  migrate:
+    build: .
+    command: ["migrate"]
+    environment: *env
+    depends_on:
+      db:
+        condition: service_healthy
+  api:
+    <<: *app
+    command: ["api"]
+    ports:
+      - "127.0.0.1:8080:8080"
+  worker:
+    <<: *app
+    command: ["worker"]
+    deploy:
+      replicas: 4
+    restart: unless-stopped
+volumes:
+  pgdata:
